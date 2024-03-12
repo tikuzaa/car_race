@@ -354,7 +354,7 @@ const ASSETS = {
       return;
     }
   
-    if (e.code === "KeyC") {
+    if (e.code === "KeyS") {
       e.preventDefault();
   
       if (inGame) return;
@@ -461,7 +461,7 @@ const ASSETS = {
   
       home.style.display = "block";
       road.style.opacity = 0.4;
-      text.innerText = "INSERT COIN";
+      text.innerText = "START NOW";
   
       highscores.push(lap.innerText);
       highscores.sort();
@@ -639,7 +639,7 @@ const ASSETS = {
   
     for (let line of lines) line.curve = line.y = 0;
   
-    text.innerText = "INSERT COIN";
+    text.innerText = "START NOW";
     text.classList.add("blink");
   
     road.style.opacity = 0.4;
